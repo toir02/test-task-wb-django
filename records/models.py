@@ -1,3 +1,5 @@
 from django.db import models
 
-# Create your models here.
+
+class Record(models.Model):
+    data = models.JSONField(verbose_name="Данные для записи")
